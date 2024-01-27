@@ -1,39 +1,108 @@
+<!DOCTYPE html>
 {% load static %}
-{% include 'navbar.html' %}
 
-    <!-- Service Start -->
+{% include 'navbar.html' %}
+<head>
+
+
+
+    <!-- Plan Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6">Services</h1>
-                <p class="text-primary fs-5 mb-5">Buy, Sell And Exchange Cryptocurrency</p>
+                <h1 class="display-6">Pricing</h1>
+                <h2>Investment Plans</h2>
+                <p class="text-seconday fs-5 mb-4">Choose from our list of investments and select the one that suits you the best.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-light p-5">
-                        <img class="img-fluid mb-4" src="{% static 'img/grow.png' %}" alt="">
-                        <h5 class="mb-3">Currency Wallet</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                        <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
+                        <!-- <img class="img-fluid mb-4" src="{% static 'img/grow.png' %}" alt=""> -->
+                        <h5 class="mb-3">Standard Plan</h5>
+                        <h2>£500 - £5999</h2>
+                        <h5>10% <small
+                            class="small-font">Every Day</small></h5>
+                                                <ul>
+                    <li>
+                        <i class="far fa-chevron-double-right"></i> Profit For  Every Day
+                        <span class="badge"></span>
+                    </li>
+                    <li>
+                        <i class="far fa-chevron-double-right"></i> Capital will back                                        <small>
+                            <span
+                                class="badge"></span></small>
+                    </li>
+
+                    <li>
+                                                                    <i class="far fa-chevron-double-right"></i> 3650 %
+                            +
+                                                                            <span class="badge"></span>
+                                                                                                        </li>
+                </ul>
+                        <!-- <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p> -->
+                        <a href="{% url 'login' %}">Buy Now</a>
+                        <!-- <i class="fa fa-arrow-right ms-2"></i> -->
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item bg-light p-5">
-                        <img class="img-fluid mb-4" src="{% static 'img/premium.png' %}" alt="">
-                        <h5 class="mb-3">Currency Transaction</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                        <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
+                        <!-- <img class="img-fluid mb-4" src="{% static 'img/grow.png' %}" alt=""> -->
+                        <h5 class>Premium Plan</h5>
+                        <h2>£6000 - £29999</h2>
+                        <h5>10% <small
+                            class="small-font">Every Day</small></h5>
+                                                <ul>
+                    <li>
+                        <i class="far fa-chevron-double-right"></i> Profit For  Every Day
+                        <span class="badge"></span>
+                    </li>
+                    <li>
+                        <i class="far fa-chevron-double-right"></i> Capital will back                                        <small><span
+                                class="badge"></span></small>
+                    </li>
+
+                    <li>
+                                                                    <i class="far fa-chevron-double-right"></i> 3650 %
+                            +
+                                                                            <span class="badge"></span>
+                                                                                                        </li>
+                </ul>
+                        <!-- <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p> -->
+                        <a href="{% url 'login' %}">Buy Now</a>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-light p-5">
-                        <img class="img-fluid mb-4" src="{% static 'img/grow.png' %}" alt="">
-                        <h5 class="mb-3">Bitcoin Investment</h5>
-                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                        <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
+                        <!-- <img class="img-fluid mb-4" src="{% static 'img/grow.png' %}" alt=""> -->
+                        <h5 class="mb-3">Professional Plan</h5>
+                        <h3>£30000 - £1000000</h3>
+                        <h5>20% <small
+                            class="small-font">Every Day</small></h5>
+                                                <ul>
+                    <li>
+                        <i class="far fa-chevron-double-right"></i> Profit For  Every Day
+                        <span class="badge"></span>
+                    </li>
+                    <li>
+                        <i class="far fa-chevron-double-right"></i> Capital will back                                        <small><span
+                                class="badge"></span></small>
+                    </li>
+
+                    <li>
+                                                                    <i class="far fa-chevron-double-right"></i> 7300 %
+                            +
+                                                                            <span class="badge"></span>
+                                                                                                        </li>
+                </ul>
+                        <!-- <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p> -->
+                        <a href="{% url 'login' %}">Buy Now</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-light p-5">
                         <img class="img-fluid mb-4" src="{% static 'img/premium.png' %}" alt="">
                         <h5 class="mb-3">Currency Exchange</h5>
@@ -56,11 +125,11 @@
                         <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Plan End -->
 
 
     <!-- Footer Start -->
@@ -111,6 +180,9 @@
                 </div> -->
             </div>
         </div>
+
+        
+
         <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">

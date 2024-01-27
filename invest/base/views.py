@@ -20,6 +20,9 @@ def detail(request):
 def service(request):
     return render(request, 'service.html')
 
+def plan(request):
+    return render(request, 'plan.html')
+
 def faq(request):
     return render(request, 'faq.html')
 

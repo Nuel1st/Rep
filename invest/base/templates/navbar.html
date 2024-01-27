@@ -38,7 +38,7 @@
    
    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <a href="{% url 'home' %}" class="navbar-brand d-flex align-items-center">
             <h2 class="m-0 text-primary"><img class="img-fluid me-2" src="{% static 'img/logo.png' %}" alt="" style="width: 45px;">ReversalPayments</h2>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -50,6 +50,7 @@
                 <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
                 <a href="{% url 'service' %}" class="nav-item nav-link">Service</a>
                 <a href="{% url 'faq' %}" class="nav-item nav-link">FAQs</a>
+                <a href="{% url 'plan' %}" class="nav-item nav-link">Plan</a>
                 <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
                 <a href="{% url 'login' %}" class="nav-item nav-link">Login</a>
                 <!-- <a href="roadmap.html" class="nav-item nav-link">Roadmap</a> -->
@@ -64,11 +65,11 @@
                 </div>
                 
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
+            <!-- <div class="h-100 d-lg-inline-flex align-items-center d-none">
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-            </div>
+            </div> -->
         </div>
     </nav>
     <!-- Navbar End -->
