@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-++_g$)i^oqegbsfp#^d8c+&y5tv88sga697ar!*ceb11no!c72
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['rep1-bb1d002fb085.herokuapp.com']
+ALLOWED_HOSTS = ['rep1-bb1d002fb085.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -136,7 +136,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-if os.getcwd() == '/app':
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FOWARDED_PROTO', 'https')
-    SECURE_SSL_REDIRECT = True
-    DEBUG = False
+# if os.getcwd() == '/app':
+#     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FOWARDED_PROTO', 'https')
+#     SECURE_SSL_REDIRECT = True
+#     DEBUG = False
