@@ -48,7 +48,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary"><img class="img-fluid me-2" src="{% static 'img/icon-1.png' %}" alt="" style="width: 45px;">ReversalPayments</h2>
+            <h2 class="m-0 text-primary"><img class="img-fluid me-2" src="{% static 'img/logo.png' %}" alt="" style="width: 45px;">ReversalPayments</h2>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -90,7 +90,7 @@
                 <div class="col-lg-6">
                     <h1 class="display-4 mb-3 animated slideInDown">Your investments for any purpose</h1>
                     <p class="animated slideInDown">ReversalPayment was founded to provide an alternative to the volatile investment market for people. <br> <br><span>Welcome to ReversalPayments, where we seamlessly integrate the worlds of crypto and traditional investments, setting the stage for a revolutionary era in financial innovation. As a comprehensive investment platform, we are committed to providing a secure, efficient, and rewarding experience across diverse asset classes.</span></p>
-                    <a href="" class="btn btn-primary py-3 px-4 animated slideInDown">Register</a>
+                    <a href="{% url 'login' %}" class="btn btn-primary py-3 px-4 animated slideInDown">Register</a>
                 </div>
                 <div class="col-lg-6 animated fadeIn">
                     <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="{% static 'img/coin.png' %}" alt="">
@@ -194,6 +194,7 @@
                     <img class="img-fluid mb-4" src="{% static 'img/icon-10.png' %}" alt="">
                     <h1 class="display-4" data-toggle="counter-up">123456</h1>
                     <p class="fs-5 text-primary mb-0">Monthly Transactions</p>
+                    
                 </div>
                 <div class="col-lg-4 col-md-6 text-center wow fadeIn" data-wow-delay="0.5s">
                     <img class="img-fluid mb-4" src="{% static 'img/icon-2.png' %}" alt="">
@@ -300,7 +301,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-9.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/grow.png' %}" alt="">
                         <h5 class="mb-3">Bitcoin Investment</h5>
                         <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
@@ -308,7 +309,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-5.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/premium.png' %}" alt="">
                         <h5 class="mb-3">Currency Exchange</h5>
                         <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
@@ -316,7 +317,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/grow.png' %}" alt="">
                         <h5 class="mb-3">Bitcoin Escrow</h5>
                         <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
@@ -324,7 +325,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src="img/icon-8.png" alt="">
+                        <img class="img-fluid mb-4" src="{% static 'img/premium.png' %}" alt="">
                         <h5 class="mb-3">Token Sale</h5>
                         <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
                         <a href="">Read More <i class="fa fa-arrow-right ms-2"></i></a>
@@ -459,12 +460,12 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-md-6">
-                    <h1 class="text-primary mb-4"><img class="img-fluid me-2" src="{% static 'img/icon-1.png' %}" alt="" style="width: 45px;">ReversalPayments</h1>
+                    <h1 class="text-primary mb-4"><img class="img-fluid me-2" src="{% static 'img/logo.png' %}" alt="" style="width: 45px;">ReversalPayments</h1>
                     <span>ReversalPayment was founded to provide an alternative to the volatile investment market for people.</span>
                 </div>
                 <div class="col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
-                    <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
+                    <p>Welcome to Reversal Peayments, give us your feedback.</p>
                     <div class="position-relative">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -485,9 +486,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="{% url 'about' %}">About Us</a>
+                    <a class="btn btn-link" href="{% url 'contact' %}">Contact Us</a>
+                    <a class="btn btn-link" href="{% url 'service' %}">Our Services</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
