@@ -140,3 +140,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FOWARDED_PROTO', 'https')
 #     SECURE_SSL_REDIRECT = True
 #     DEBUG = False
+
+#smtp configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackendsmtp.'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'nnamdiemmanuel01@gmail.com'
+EMAIL_HOST_PASSWORD = 'Emmanuel-star1'
